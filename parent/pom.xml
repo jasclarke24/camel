@@ -698,7 +698,7 @@
     <validation-api-version>2.0.1.Final</validation-api-version>
     <velocity-bundle-version>1.7_6</velocity-bundle-version>
     <velocity-tools-version>2.0</velocity-tools-version>
-    <velocity-version>2.0</velocity-version>
+    <velocity-version>2.3</velocity-version>
     <vertx-version>3.5.3</vertx-version>
     <vysper-version>0.7</vysper-version>
     <web3j-version>3.5.0</web3j-version>
@@ -781,8 +781,8 @@
       org.apache.lucene.*;version="${lucene-version-range}",
       org.apache.solr.*;version="${solr-version-range}",
     </camel.osgi.import.defaults>
-    <camel.osgi.import.before.defaults />
-    <camel.osgi.import.additional />
+    <camel.osgi.import.before.defaults/>
+    <camel.osgi.import.additional/>
     <camel.osgi.import.pkg>
       !${camel.osgi.export.pkg},
       org.apache.camel.*;${camel.osgi.import.camel.version},
@@ -791,18 +791,18 @@
       ${camel.osgi.import.additional},
       *
     </camel.osgi.import.pkg>
-    <camel.osgi.activator />
+    <camel.osgi.activator/>
     <camel.osgi.failok>false</camel.osgi.failok>
     <camel.osgi.private.pkg>!*</camel.osgi.private.pkg>
     <camel.osgi.export>${camel.osgi.export.pkg};${camel.osgi.version}</camel.osgi.export>
     <camel.osgi.version>version=${project.version}</camel.osgi.version>
     <camel.osgi.split.pkg>-split-package:=first</camel.osgi.split.pkg>
     <camel.osgi.import>${camel.osgi.import.pkg}</camel.osgi.import>
-    <camel.osgi.dynamic />
+    <camel.osgi.dynamic/>
     <camel.osgi.symbolic.name>${project.groupId}.${project.artifactId}</camel.osgi.symbolic.name>
     <camel.osgi.exclude.dependencies>false</camel.osgi.exclude.dependencies>
-    <camel.osgi.require.capability />
-    <camel.osgi.provide.capability />
+    <camel.osgi.require.capability/>
+    <camel.osgi.provide.capability/>
   </properties>
 
   <dependencyManagement>
@@ -5340,7 +5340,7 @@
                    </goals>
                  </pluginExecutionFilter>
                  <action>
-                   <ignore />
+                   <ignore/>
                  </action>
                </pluginExecution>
                <pluginExecution>
@@ -5353,7 +5353,7 @@
                    </goals>
                  </pluginExecutionFilter>
                  <action>
-                   <ignore />
+                   <ignore/>
                  </action>
                </pluginExecution>
              </pluginExecutions>
