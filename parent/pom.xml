@@ -291,7 +291,7 @@
     <hawtdb-version>1.6</hawtdb-version>
     <hawtdispatch-version>1.22</hawtdispatch-version>
     <hazelcast-version>3.10.5</hazelcast-version>
-    <hbase-version>1.2.6</hbase-version>
+    <hbase-version>2.4.0</hbase-version>
     <hessian-version>4.0.51</hessian-version>
     <hdrhistrogram-version>2.1.10</hdrhistrogram-version>
     <hibernate-validator-version>6.0.13.Final</hibernate-validator-version>
@@ -781,8 +781,8 @@
       org.apache.lucene.*;version="${lucene-version-range}",
       org.apache.solr.*;version="${solr-version-range}",
     </camel.osgi.import.defaults>
-    <camel.osgi.import.before.defaults />
-    <camel.osgi.import.additional />
+    <camel.osgi.import.before.defaults/>
+    <camel.osgi.import.additional/>
     <camel.osgi.import.pkg>
       !${camel.osgi.export.pkg},
       org.apache.camel.*;${camel.osgi.import.camel.version},
@@ -791,18 +791,18 @@
       ${camel.osgi.import.additional},
       *
     </camel.osgi.import.pkg>
-    <camel.osgi.activator />
+    <camel.osgi.activator/>
     <camel.osgi.failok>false</camel.osgi.failok>
     <camel.osgi.private.pkg>!*</camel.osgi.private.pkg>
     <camel.osgi.export>${camel.osgi.export.pkg};${camel.osgi.version}</camel.osgi.export>
     <camel.osgi.version>version=${project.version}</camel.osgi.version>
     <camel.osgi.split.pkg>-split-package:=first</camel.osgi.split.pkg>
     <camel.osgi.import>${camel.osgi.import.pkg}</camel.osgi.import>
-    <camel.osgi.dynamic />
+    <camel.osgi.dynamic/>
     <camel.osgi.symbolic.name>${project.groupId}.${project.artifactId}</camel.osgi.symbolic.name>
     <camel.osgi.exclude.dependencies>false</camel.osgi.exclude.dependencies>
-    <camel.osgi.require.capability />
-    <camel.osgi.provide.capability />
+    <camel.osgi.require.capability/>
+    <camel.osgi.provide.capability/>
   </properties>
 
   <dependencyManagement>
@@ -5340,7 +5340,7 @@
                    </goals>
                  </pluginExecutionFilter>
                  <action>
-                   <ignore />
+                   <ignore/>
                  </action>
                </pluginExecution>
                <pluginExecution>
@@ -5353,7 +5353,7 @@
                    </goals>
                  </pluginExecutionFilter>
                  <action>
-                   <ignore />
+                   <ignore/>
                  </action>
                </pluginExecution>
              </pluginExecutions>
